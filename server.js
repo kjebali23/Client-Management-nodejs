@@ -12,7 +12,7 @@ const connectDB = require('./server/database/connection');
 require('./utils/passport')(passport);
 
 dotenv.config({path:'config.env'})
-const PORT = process.env.$PORT || 8080
+const $PORT = process.env.$PORT || 8080
 
 //log requests
 app.use(morgan('tiny'));
@@ -48,6 +48,6 @@ app.use(passport.session());
 app.use('/', require('./server/routes/router'));
 
 
-app.listen(PORT , ()=>{
-    console.log(`The server is running on port ${PORT}`);
+app.listen($PORT , ()=>{
+    console.log(`The server is running on port ${$PORT}`);
 })
