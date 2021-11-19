@@ -1,0 +1,22 @@
+<% for(var i = 0 ; i < users.length ; i++) {  %>
+
+    <tr>
+    <td> <%= i+1  %></td>
+    <td><%= users[i].name  %></td>
+    <td><%= users[i].phone  %></td>
+    <td><%= users[i].full_adress  %></td>
+    <td>
+        <a class="btn border-shadow " id="sms" href="" >
+            <span class="text-gradient"><i class="far fa-envelope"></i></span>
+        </a>
+        <a href="/update_user?id=<%= users[i]._id %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id="<%= users[i]._id %>">
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+        
+    </td>
+</tr>
+
+<% } %>
