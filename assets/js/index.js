@@ -14,7 +14,7 @@ $("#update_user").submit(function(event){
     console.log(data.id);
 
     var request = {
-        "url":`http://localhost:3000/api/users/${data.id}`,
+        "url":`https://node-js-transporter.herokuapp.com/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -29,7 +29,7 @@ if(window.location.pathname == "/"){
     $ondelete.click(function(){
         var id = $(this).attr("data-id")
         var request = {
-            "url":`http://localhost:3000/api/users/${id}`,
+            "url":`https://node-js-transporter.herokuapp.com/api/users/${id}`,
             "method" : "DELETE"
         }
 
@@ -46,7 +46,7 @@ if(window.location.pathname == "/"){
 $('#sms').click(function(){
     $.ajax({
         type: 'GET',
-        url : 'http://localhost:3000/sms',
+        url : 'https://node-js-transporter.herokuapp.com/api/users/sms',
         success: function(){
             console.log('Done');
         }
