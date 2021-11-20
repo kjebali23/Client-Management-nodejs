@@ -12,7 +12,7 @@ const connectDB = require('./server/database/connection');
 require('./utils/passport')(passport);
 
 dotenv.config({path:'config.env'})
-const PORT = process.env.PORT || 27017
+const PORT = process.env.PORT || 8080
 
 //log requests
 app.use(morgan('tiny'));

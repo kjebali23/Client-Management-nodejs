@@ -13,7 +13,7 @@ exports.sign_up = (req,res)=>{
 
 exports.homeRoutes = (req,res) =>{
     // make a get request to /api/users
-    axios.get('http://localhost:3000/api/users')
+    axios.get('https://node-js-transporter.herokuapp.com/')
          .then(function(response){
              res.render('index' , {users : response.data});
             })
