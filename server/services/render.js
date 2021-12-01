@@ -42,3 +42,6 @@ exports.update_user = (req,res) =>{
          })
 }
 
+exports.messaging = (req,res)=>{
+    res.render('messaging');
+}

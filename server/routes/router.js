@@ -71,9 +71,13 @@ route.get('/update_user', ensureAuthenticated,services.update_user)
  * @description users map
  * @method Get/
  */
-route.get('/map', services.map)
+route.get('/map',ensureAuthenticated ,  services.map)
 
-
+/**
+ * @description Authentified Users messaging 
+ * @method Get/
+ */
+route.get('/messaging', ensureAuthenticated, services.messaging)
 
 
 //API
