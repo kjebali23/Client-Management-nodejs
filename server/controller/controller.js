@@ -183,8 +183,8 @@ exports.delete = (req,res)=>{
 
 //Send a message throuht twilio:
 exports.sms = (req,res)=>{
-    const accountSid = 'ACc6e3d954428cbeee9b934ebbb47dcce3';
-    const authToken = '6f100b94088853b6ce2d9d177180c915';
+    const accountSid = process.env.TWILIO_ACCOUNT_SID ;
+    const authToken = process.env.TWILIO_AUTH_TOKEN;
     const client = require('twilio')(accountSid, authToken);
 
     client.messages

@@ -1,14 +1,10 @@
 const express = require('express');
-const http = require('http');
 const dotenv = require('dotenv');
 const app = express();
 const morgan = require('morgan');
 const path  = require('path');
 const session = require('express-session');
 const passport = require('passport');
-const server = http.createServer(app);
-const {Server} = require('socket.io');
-const io = new Server(server);
 
 const connectDB = require('./server/database/connection');
 
@@ -51,17 +47,8 @@ app.use(passport.session());
 //load routers
 app.use('/', require('./server/routes/router'));
 
-io.on('connection', (socket) => {
-  console.log('user joined chat');
-  socket.on('chat message', (msg) => {
-    io.emit('chat message',msg);
-  });
-  socket.on('disconnect' , ()=>{
-    console.log('user left chat')
-  })
-});
 
 
-server.listen(PORT , ()=>{
+app.listen(PORT , ()=>{
     console.log(`The server is running on port ${PORT}`);
 })

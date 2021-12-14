@@ -1,5 +1,4 @@
 const axios = require('axios');
-const {ensureAuthenticated} = require('../../utils/auth');
 
 
 exports.login = (req,res) =>{
@@ -42,6 +41,3 @@ exports.update_user = (req,res) =>{
          })
 }
 
-exports.messaging = (req,res)=>{
-    res.render('messaging');
-}
