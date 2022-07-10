@@ -30,16 +30,20 @@ User needs to be authenticated.
 
 ## Screenshots
 **Login Page:**
-<img width="1440" alt="Screen Shot 2022-07-10 at 00 56 15" src="https://user-images.githubusercontent.com/38618836/178126569-88fba7dc-f2ce-484d-9fa8-26cdc7957972.png">
+
+<img width="800" alt="Screen Shot 2022-07-10 at 00 56 15" src="https://user-images.githubusercontent.com/38618836/178126569-88fba7dc-f2ce-484d-9fa8-26cdc7957972.png">
 
 **Clients Page:**
-<img width="1440" alt="Screen Shot 2022-07-10 at 00 54 41" src="https://user-images.githubusercontent.com/38618836/178126584-0eb74bf9-5aed-4aca-ad49-7089de1abd6c.png">
+
+<img width="800" alt="Screen Shot 2022-07-10 at 00 54 41" src="https://user-images.githubusercontent.com/38618836/178126584-0eb74bf9-5aed-4aca-ad49-7089de1abd6c.png">
 
 **Client creation page:**
-<img width="1440" alt="Screen Shot 2022-07-10 at 00 55 02" src="https://user-images.githubusercontent.com/38618836/178126593-0e04b47c-0a10-4fb0-9192-3d7fb4e04fc6.png">
+
+<img width="800" alt="Screen Shot 2022-07-10 at 00 55 02" src="https://user-images.githubusercontent.com/38618836/178126593-0e04b47c-0a10-4fb0-9192-3d7fb4e04fc6.png">
 
 
 **Map:**
-<img width="1440" alt="Screen Shot 2022-07-10 at 00 55 37" src="https://user-images.githubusercontent.com/38618836/178126589-e7ddd01f-690d-4696-80ad-497457d8bb2d.png">
+
+<img width="800" alt="Screen Shot 2022-07-10 at 00 55 37" src="https://user-images.githubusercontent.com/38618836/178126589-e7ddd01f-690d-4696-80ad-497457d8bb2d.png">
 
 
